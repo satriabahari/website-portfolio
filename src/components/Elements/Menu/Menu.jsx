@@ -1,8 +1,7 @@
-const Menu = (props) => {
-  const {href, children} = props
+const Menu = ({onClick, children}) => {
   return(
     <li className="mx-3 text-sm font-medium hover:text-primary">
-      <a href={href}>{children}</a>
+      <button onClick={onClick}>{children}</button>
     </li>
   )
 }

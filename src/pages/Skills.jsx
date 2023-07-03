@@ -2,10 +2,17 @@ import Description from "../components/Elements/Text/Description";
 import Title from "../components/Elements/Text/Title";
 import CardSkills from "../components/Fragments/CardSkills";
 import FirstLayout from "../components/Layouts/FirstLayout";
+import { MyContext } from "../context/MyContext";
+import { useContext } from "react";
 
-const SkillsPage = () => {
+export const SkillsPage = () => {
+  const context = useContext(MyContext);
+
   return (
-    <FirstLayout classname="bg-background grid-rows-[35%_65%] gap-4 h-screen">
+    <FirstLayout
+      classname="bg-background grid-rows-[35%_65%] gap-4 h-screen"
+      ref={context.skillRef}
+    >
       <div className="text-center text-white flex flex-col justify-center items-center">
         <Title classname=" text-4xl text-primary">Skills</Title>
         <span className="w-1/5 bg-info h-[0.5px] my-6"></span>
@@ -21,5 +28,3 @@ const SkillsPage = () => {
     </FirstLayout>
   );
 };
-
-export default SkillsPage;

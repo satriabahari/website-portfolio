@@ -1,7 +1,7 @@
 import Description from "../components/Elements/Text/Description"
 import FirstLayout from "../components/Layouts/FirstLayout"
 
-const Footer = () => {
+export const Footer = () => {
   return(
     <FirstLayout classname="h-12 bg-background border-t border-primary">
       <Description classname="flex justify-center items-center text-primary">
@@ -11,4 +11,3 @@ const Footer = () => {
   )
 }
 
-export default Footer

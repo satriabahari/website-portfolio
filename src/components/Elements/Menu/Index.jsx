@@ -1,13 +1,20 @@
+import { useContext } from "react";
 import Menu from "./Menu";
+import { MyContext } from "../../../context/MyContext";
 
 const Menus = () => {
+  const context = useContext(MyContext);
+
+  const handleClick = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <ul className="flex border border-primary py-1 px-3 rounded-full">
-      <Menu href="/home">Home</Menu>
-      <Menu href="/about">About</Menu>
-      <Menu href="/skills">Skills</Menu>
-      <Menu href="/portfolio">Portfolio</Menu>
-      <Menu href="/contact">Contact</Menu>
+      <Menu onClick={() => handleClick(context.homeRef)}>Home</Menu>
+      <Menu onClick={() => handleClick(context.aboutRef)}>About</Menu>
+      <Menu onClick={() => handleClick(context.skillRef)}>Skills</Menu>
+      <Menu onClick={() => handleClick(context.portfolioRef)}>Portfolio</Menu>
     </ul>
   );
 };

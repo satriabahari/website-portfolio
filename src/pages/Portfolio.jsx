@@ -2,10 +2,17 @@ import Description from "../components/Elements/Text/Description";
 import Title from "../components/Elements/Text/Title";
 import CardPortfolio from "../components/Fragments/CardPorfolio";
 import FirstLayout from "../components/Layouts/FirstLayout";
+import { MyContext } from "../context/MyContext";
+import { useContext } from "react";
 
-const Portfolio = () => {
+export const Portfolio = () => {
+  const context = useContext(MyContext);
+
   return (
-    <FirstLayout classname={"bg-background grid-rows-[35%_65%] gap-4 h-screen"}>
+    <FirstLayout
+      classname={"bg-background grid-rows-[35%_65%] gap-4 h-screen"}
+      ref={context.portfolioRef}
+    >
       <div className="text-center text-white flex flex-col justify-center items-center">
         <Title classname=" text-4xl text-primary">My Portfolio</Title>
         <span className="w-1/5 bg-info h-[0.5px] my-6"></span>
@@ -21,5 +28,3 @@ const Portfolio = () => {
     </FirstLayout>
   );
 };
-
-export default Portfolio;
