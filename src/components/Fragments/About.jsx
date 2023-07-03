@@ -3,7 +3,7 @@ import NameAbout from "../Elements/Title/NameAbout";
 
 const About = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-auto">
       <Image
         src="../../../public/images/logo-(black)-transparan.png
 "

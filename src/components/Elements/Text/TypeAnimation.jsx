@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Type = () => {
   return (
-    <h1 className="font-bold text-5xl mb-6 text-primary">
+    <h1 className="font-bold text-4xl md:text-5xl mb-6 text-primary dark:text-white">
       A{" "}
       <TypeAnimation
         sequence={[

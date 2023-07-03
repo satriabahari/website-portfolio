@@ -8,7 +8,7 @@ export const AboutPage = () => {
   const context = useContext(MyContext);
 
   return (
-    <FirstLayout classname={"bg-background grid-cols-2"} ref={context.aboutRef}>
+    <FirstLayout classname={"bg-background h-screen grid-rows-2 md:grid-rows-1 md:grid-cols-2 dark:bg-primary"} ref={context.aboutRef}>
       <About />
       <NameAbout />
     </FirstLayout>

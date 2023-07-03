@@ -2,7 +2,7 @@ import Image from "../Elements/Image/Image";
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-auto">
       <Image
         classname=""
         src="../../../public/images/logo-(black)-transparan.png

@@ -5,7 +5,7 @@ import Title from "../Text/Title";
 const Cards = (props) => {
   const { src, title, children, icon } = props;
   return (
-    <div className="border border-neutral w-full rounded-xl bg-background backdrop-blur-sm">
+    <div className="border border-neutral w-full rounded-xl bg-background">
       <div className="flex justify-center flex-col m-6">
         {icon}
         <Title classname="text-primary font-bold text-lg mt-3">{title}</Title>

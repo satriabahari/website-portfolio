@@ -1,6 +1,6 @@
 const Description = (props) => {
   const { children, classname } = props;
-  return <p className={`text-neutral ${classname}`}>{children}</p>;
+  return <p className={`${classname}`}>{children}</p>;
 };
 
 export default Description;
