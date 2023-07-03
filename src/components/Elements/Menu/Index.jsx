@@ -14,7 +14,7 @@ const Menus = () => {
       <Menu onClick={() => handleClick(context.homeRef)}>Home</Menu>
       <Menu onClick={() => handleClick(context.aboutRef)}>About</Menu>
       <Menu onClick={() => handleClick(context.skillRef)}>Skills</Menu>
-      <Menu onClick={() => handleClick(context.portfolioRef)}>Portfolio</Menu>
+      {/* <Menu onClick={() => handleClick(context.portfolioRef)}>Portfolio</Menu> */}
     </ul>
   );
 };

@@ -19,7 +19,7 @@ export const IndexPages = () => {
       <HerosPage />
       <AboutPage />
       <SkillsPage />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Footer />
     </MyContext.Provider>
   );

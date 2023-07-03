@@ -1,41 +1,42 @@
 import Cards from "../Elements/Card/Index";
 import Title from "../Elements/Text/Title";
+import { FaGithub, FaJs, FaNeos, FaNodeJs, FaReact, FaSass } from "react-icons/fa";
 
 const dataSkills = [
   {
     id: 1,
-    image: "https://placeholder.com/100x100",
+    icon: <FaJs size="50px"/>,
     title: "Javascript",
     description: "ini adalah sebuah contoh kata kata untuk Cards",
   },
   {
     id: 2,
-    image: "https://placeholder.com/100x100",
+    icon: <FaSass size="50px"/>,
     title: "TailwindCSS",
     description: "ini adalah sebuah contoh kata kata untuk Cards",
   },
   {
     id: 3,
-    image: "https://placeholder.com/100x100",
+    icon: <FaReact size="50px"/>,
     title: "React JS",
     description: "ini adalah sebuah contoh kata kata untuk Cards",
   },
   {
     id: 4,
-    image: "https://placeholder.com/100x100",
+    icon: <FaNeos size="50px"/>,
     title: "Next JS",
     description: "ini adalah sebuah contoh kata kata untuk Cards",
   },
   {
     id: 5,
-    image: "https://placeholder.com/100x100",
+    icon: <FaNodeJs size="50px"/>,
     title: "Node JS",
     description: "ini adalah sebuah contoh kata kata untuk Cards",
   },
   {
     id: 6,
-    image: "https://placeholder.com/100x100",
-    title: "Git",
+    icon: <FaGithub size="50px"/>,
+    title: "Github",
     description: "ini adalah sebuah contoh kata kata untuk Cards",
   },
 ];
@@ -46,7 +47,7 @@ const CardSkills = () => {
       {dataSkills.map((data) => (
         <Cards
           key={data.id}
-          src={data.image}
+          icon={data.icon}
           title={data.title}
           alt={data.title}
         >

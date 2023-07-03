@@ -13,9 +13,9 @@ export const Portfolio = () => {
       classname={"bg-background grid-rows-[35%_65%] gap-4 h-screen"}
       ref={context.portfolioRef}
     >
-      <div className="text-center text-white flex flex-col justify-center items-center">
+      <div className="text-center text-white flex flex-col justify-center items-center mt-14">
         <Title classname=" text-4xl text-primary">My Portfolio</Title>
-        <span className="w-1/5 bg-info h-[0.5px] my-6"></span>
+        <span className="w-1/5 bg-neutral h-[0.5px] my-6"></span>
         <Description classname="w-2/3 text-lg text-neutral">
           Begin with your repository, or start with a template. Our tooling
           extends your app with plugins and variable management so environments
