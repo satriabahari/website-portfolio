@@ -45,8 +45,8 @@ export const Navbar = () => {
         <Image
           src={
             theme === "light"
-              ? "../../../public/images/logo-(black)-transparan.png"
-              : "../../../public/images/logo-(white)-transparan.png"
+              ? "../../../images/logo-(black)-transparan.png"
+              : "../../../images/logo-(white)-transparan.png"
           }
           alt="logo axel"
           width="35px"

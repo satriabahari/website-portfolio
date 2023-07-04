@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <div className="flex h-auto items-end justify-center md:items-center">
       <Image
-        src="../../../public/images/logo-(black)-transparan.png
+        src="../../../images/logo-(black)-transparan.png
 "
         title="logo axel"
         width="500px"

@@ -9,7 +9,7 @@ export const Bubble = ({ classname, variants, initial, animate, width }) => {
       className={`absolute z-10 hidden md:block ${classname}`}
     >
       <img
-        src="../../../public/images/bubble.png"
+        src="../../../images/bubble.png"
         alt="Bubble Image"
         width={width}
       />
