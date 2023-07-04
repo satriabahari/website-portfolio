@@ -113,7 +113,7 @@ export const Hero = () => {
     <div className="relative flex h-auto items-center justify-center">
       <Image
         classname="z-20 "
-        src="../../../public/images/axel-bubble.png
+        src="../../../images/axel-bubble.png
 "
         width="sm:400"
         title="logo axel"
