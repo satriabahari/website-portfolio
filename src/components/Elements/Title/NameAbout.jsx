@@ -1,11 +1,16 @@
 import { FaArrowRight } from "react-icons/fa";
-import Button from "../Button/Button";
-import Description from "../Text/Description";
-import Title from "../Text/Title";
+import { Button } from "../Button/Button";
+import { Description } from "../Text/Description";
+import { Title } from "../Text/Title";
+import { useEffect } from "react";
+import Aos from "aos";
 
-const NameAbout = () => {
+export const NameAbout = () => {
+  // useEffect(() => {
+  //   Aos.init({duration: 1000})
+  // })
   return (
-    <div className="w-full flex flex-col my-auto text-center md:text-start">
+    <div className="w-full flex flex-col my-auto text-center md:text-start" data-aos="zoom-in" data-aos-offset="35">
       <Title classname="text-4xl md:text-5xl mb-6 text-primary dark:text-white">
         Hello! I'm Satria Bahari
       </Title>
@@ -23,5 +28,3 @@ const NameAbout = () => {
     </div>
   );
 };
-
-export default NameAbout;

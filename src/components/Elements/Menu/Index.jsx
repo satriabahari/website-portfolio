@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import Menu from "./Menu";
+import {Menu} from "./Menu";
 import { MyContext } from "../../../context/MyContext";
 
-const Menus = () => {
+export const Menus = () => {
   const context = useContext(MyContext);
 
   const handleClick = (ref) => {
@@ -19,4 +19,3 @@ const Menus = () => {
   );
 };
 
-export default Menus;

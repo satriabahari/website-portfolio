@@ -1,5 +1,4 @@
-import Cards from "../Elements/Card/Index";
-import Title from "../Elements/Text/Title";
+import {Cards} from "../Elements/Card/Index";
 
 const dataPortfolio = [
   {
@@ -28,7 +27,7 @@ const dataPortfolio = [
   },
 ];
 
-const CardPortfolio = () => {
+export const CardPortfolio = () => {
   return (
     <>
       {dataPortfolio.map((data) => (
@@ -41,8 +40,6 @@ const CardPortfolio = () => {
           {data.description}
         </Cards>
       ))}
-      </>
+    </>
   );
 };
-
-export default CardPortfolio;

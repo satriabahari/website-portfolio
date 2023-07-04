@@ -1,6 +1,4 @@
-const Description = (props) => {
-  const { children, classname } = props;
-  return <p className={`${classname}`}>{children}</p>;
+export const Description = ({ children, classname, aos }) => {
+  return <p className={`${classname}`} data-aos={aos}>{children}</p>;
 };
 
-export default Description;

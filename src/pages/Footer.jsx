@@ -1,5 +1,5 @@
-import Description from "../components/Elements/Text/Description"
-import FirstLayout from "../components/Layouts/FirstLayout"
+import {Description} from "../components/Elements/Text/Description"
+import {FirstLayout} from "../components/Layouts/FirstLayout"
 
 export const Footer = () => {
   return(

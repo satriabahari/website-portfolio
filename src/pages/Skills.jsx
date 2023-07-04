@@ -1,19 +1,28 @@
-import Description from "../components/Elements/Text/Description";
-import Title from "../components/Elements/Text/Title";
-import CardSkills from "../components/Fragments/CardSkills";
-import FirstLayout from "../components/Layouts/FirstLayout";
+import Aos from "aos";
+import { Description } from "../components/Elements/Text/Description";
+import { Title } from "../components/Elements/Text/Title";
+import { CardSkills } from "../components/Fragments/CardSkills";
+import { FirstLayout } from "../components/Layouts/FirstLayout";
 import { MyContext } from "../context/MyContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 export const SkillsPage = () => {
   const context = useContext(MyContext);
+
+  // useEffect(() => {
+  //   Aos.init({duration: 1200})
+  // })
 
   return (
     <FirstLayout
       classname="bg-background grid-rows-[35%_65%] gap-4 h-screen dark:bg-primary"
       ref={context.skillRef}
     >
-      <div className="text-center text-white flex flex-col justify-center items-center mt-14">
+      <div
+        className="text-center text-white flex flex-col justify-center items-center mt-14"
+        data-aos="fade-down"
+        data-aos-offset="100"
+      >
         <Title classname=" text-4xl text-primary dark:text-white">Skills</Title>
         <span className="w-1/5 bg-neutral h-[0.5px] my-6 dark:bg-white"></span>
         <Description classname="w-2/3 text-lg text-neutral dark:text-white">

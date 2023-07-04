@@ -1,5 +1,4 @@
-const Card = (props) => {
-  const {image, title, description} = props
+export const Card = ({ image, title, description }) => {
   return (
     <div>
       <div>
@@ -10,5 +9,3 @@ const Card = (props) => {
     </div>
   );
 };
-
-export default Card;

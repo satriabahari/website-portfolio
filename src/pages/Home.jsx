@@ -1,7 +1,7 @@
-import Hero from "../components/Fragments/Hero";
-import Navbar from "../components/Fragments/Navbar";
-import NameHero from "../components/Elements/Title/NameHero";
-import FirstLayout from "../components/Layouts/FirstLayout";
+import { Hero } from "../components/Fragments/Hero";
+import { Navbar } from "../components/Fragments/Navbar";
+import { NameHero } from "../components/Elements/Title/NameHero";
+import { FirstLayout } from "../components/Layouts/FirstLayout";
 import { MyContext } from "../context/MyContext";
 import { useContext } from "react";
 

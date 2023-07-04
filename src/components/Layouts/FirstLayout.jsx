@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 
-const FirstLayout = forwardRef(({ children, navbar, classname }, ref) => {
+export const FirstLayout = forwardRef(({ children, navbar, classname }, ref) => {
   return (
     <div className={`container px-16 grid ${classname}`} ref={ref}>
       {navbar}
@@ -8,5 +8,3 @@ const FirstLayout = forwardRef(({ children, navbar, classname }, ref) => {
     </div>
   );
 });
-
-export default FirstLayout;

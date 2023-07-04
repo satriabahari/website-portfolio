@@ -1,7 +1,3 @@
-const Title = (props) => {
-  const {children, classname} = props
-  return <h1 className={`font-semibold ${classname}`}>{children}</h1>;
+export const Title = ({ children, classname, aos }) => {
+  return <h1 className={`font-semibold ${classname}`} data-aos={aos}>{children}</h1>;
 };
-
-export default Title;
- 

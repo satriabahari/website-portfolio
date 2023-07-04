@@ -1,11 +1,9 @@
-import Image from "../Image/Image";
-import Description from "../Text/Description";
-import Title from "../Text/Title";
+import {Description} from "../Text/Description";
+import {Title} from "../Text/Title";
 
-const Cards = (props) => {
-  const { src, title, children, icon } = props;
+export const Cards = ({ title, children, icon }) => {
   return (
-    <div className="border border-neutral w-full rounded-xl bg-background">
+    <div className="border border-neutral w-full rounded-xl bg-background" data-aos="flip-left">
       <div className="flex justify-center flex-col m-6">
         {icon}
         <Title classname="text-primary font-bold text-lg mt-3">{title}</Title>
@@ -14,5 +12,3 @@ const Cards = (props) => {
     </div>
   );
 };
-
-export default Cards;

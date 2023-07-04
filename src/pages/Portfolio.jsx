@@ -1,7 +1,7 @@
-import Description from "../components/Elements/Text/Description";
-import Title from "../components/Elements/Text/Title";
-import CardPortfolio from "../components/Fragments/CardPorfolio";
-import FirstLayout from "../components/Layouts/FirstLayout";
+import {Description} from "../components/Elements/Text/Description";
+import {Title} from "../components/Elements/Text/Title";
+import {CardPortfolio} from "../components/Fragments/CardPorfolio";
+import {FirstLayout} from "../components/Layouts/FirstLayout";
 import { MyContext } from "../context/MyContext";
 import { useContext } from "react";
 

@@ -1,13 +1,16 @@
-const Image = (props) => {
-  const {src, width, title, classname} = props
+import { motion } from "framer-motion";
+
+export const Image = ({ src, width, title, classname, variants, aos }) => {
   return (
-    <img className={`${classname}`}
+    <motion.img
+      className={`${classname}`}
       src={src}
       alt={title}
       width={width}
+      variants={variants}
+      initial="hidden"
+      animate="visible"
+      data-aos={aos}
     />
   );
 };
-
-
-export default Image;
