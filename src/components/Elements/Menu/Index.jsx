@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import {Menu} from "./Menu";
+import { Menu } from "./Menu";
 import { MyContext } from "../../../context/MyContext";
 
 export const Menus = () => {
@@ -10,12 +10,12 @@ export const Menus = () => {
   };
 
   return (
-    <ul className="flex border border-primary py-1 px-3 rounded-full">
-      <Menu onClick={() => handleClick(context.homeRef)}>Home</Menu>
+    <ul className="flex rounded-full border border-primary px-3 py-1 dark:border-white">
+      {/* <Menu onClick={() => handleClick(context.homeRef)}>Home</Menu> */}
       <Menu onClick={() => handleClick(context.aboutRef)}>About</Menu>
       <Menu onClick={() => handleClick(context.skillRef)}>Skills</Menu>
+      <Menu onClick={() => handleClick(context.contactRef)}>Contact</Menu>
       {/* <Menu onClick={() => handleClick(context.portfolioRef)}>Portfolio</Menu> */}
     </ul>
   );
 };
-

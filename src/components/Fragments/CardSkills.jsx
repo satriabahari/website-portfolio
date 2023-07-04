@@ -1,6 +1,8 @@
-import {Cards} from "../Elements/Card/Index";
+import { Cards } from "../Elements/Card/Index";
 import {
+  FaCss3,
   FaGithub,
+  FaHtml5,
   FaJs,
   FaNeos,
   FaNodeJs,
@@ -10,7 +12,16 @@ import {
 
 const dataSkills = [
   {
-    id: 1,
+    icon: <FaHtml5 size="50px" />,
+    title: "HTML",
+    description: "ini adalah sebuah contoh kata kata untuk Cards",
+  },
+  {
+    icon: <FaCss3 size="50px" />,
+    title: "CSS",
+    description: "ini adalah sebuah contoh kata kata untuk Cards",
+  },
+  {
     icon: <FaJs size="50px" />,
     title: "Javascript",
     description: "ini adalah sebuah contoh kata kata untuk Cards",
@@ -22,25 +33,21 @@ const dataSkills = [
     description: "ini adalah sebuah contoh kata kata untuk Cards",
   },
   {
-    id: 3,
     icon: <FaReact size="50px" />,
     title: "React JS",
     description: "ini adalah sebuah contoh kata kata untuk Cards",
   },
   {
-    id: 4,
     icon: <FaNeos size="50px" />,
     title: "Next JS",
     description: "ini adalah sebuah contoh kata kata untuk Cards",
   },
   {
-    id: 5,
     icon: <FaNodeJs size="50px" />,
     title: "Node JS",
     description: "ini adalah sebuah contoh kata kata untuk Cards",
   },
   {
-    id: 6,
     icon: <FaGithub size="50px" />,
     title: "Github",
     description: "ini adalah sebuah contoh kata kata untuk Cards",
@@ -50,13 +57,8 @@ const dataSkills = [
 export const CardSkills = () => {
   return (
     <>
-      {dataSkills.map((data) => (
-        <Cards
-          key={data.id}
-          icon={data.icon}
-          title={data.title}
-          alt={data.title}
-        >
+      {dataSkills.map((data, index) => (
+        <Cards key={index} icon={data.icon} title={data.title} alt={data.title}>
           {data.description}
         </Cards>
       ))}

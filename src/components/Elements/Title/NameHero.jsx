@@ -22,12 +22,12 @@ const animationVariant = {
 export const NameHero = () => {
   return (
     <motion.div
-      className="w-full my-auto text-center md:text-start"
+      className="flex w-full flex-col justify-end text-center md:justify-center md:text-start"
       variants={animationVariant}
-      initial="hidden" // Set initial animation state to hidden
-      animate="visible" // Trigger animation to visible state
+      initial="hidden"
+      animate="visible"
     >
-      <Title classname="text-6xl mb-2 text-primary dark:text-white">
+      <Title classname="text-4xl md:text-6xl mb-2 text-primary dark:text-white">
         Hello! I'm Satria,
       </Title>
       <Type />
@@ -35,10 +35,10 @@ export const NameHero = () => {
         A Front-End Developer with a strong interest in UI/UX Design. Like a
         solving the problem by combining that.
       </Description>
-      <Button classname="m-auto md:m-0 text-white bg-primary dark:bg-white dark:text-primary">
+      {/* <Button classname="m-auto md:m-0 text-white bg-primary dark:bg-white dark:text-primary">
         View About
         <FaArrowRight className="ml-2" />
-      </Button>
+      </Button> */}
     </motion.div>
   );
 };

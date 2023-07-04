@@ -15,23 +15,23 @@ export const SkillsPage = () => {
 
   return (
     <FirstLayout
-      classname="bg-background grid-rows-[35%_65%] gap-4 h-screen dark:bg-primary"
+      classname="bg-background grid-rows-[0.7fr_auto] md:grid-rows-[35%_65%] gap-4 h-auto md:h-screen dark:bg-primary"
       ref={context.skillRef}
     >
       <div
-        className="text-center text-white flex flex-col justify-center items-center mt-14"
+        className="mb-8 flex flex-col items-center justify-center text-center text-white"
         data-aos="fade-down"
         data-aos-offset="100"
       >
         <Title classname=" text-4xl text-primary dark:text-white">Skills</Title>
-        <span className="w-1/5 bg-neutral h-[0.5px] my-6 dark:bg-white"></span>
-        <Description classname="w-2/3 text-lg text-neutral dark:text-white">
+        <span className="my-6 h-[0.5px] w-1/2 bg-neutral dark:bg-white md:w-1/5"></span>
+        <Description classname="w-full md:w-2/3 text-lg text-neutral dark:text-white">
           Begin with your repository, or start with a template. Our tooling
           extends your app with plugins and variable management so environments
           are the same live as local.
         </Description>
       </div>
-      <div className=" grid grid-cols-2 lg:grid-cols-3 w-full mb-12 gap-4">
+      <div className=" grid w-full grid-cols-2 gap-2 lg:grid-cols-4">
         <CardSkills />
       </div>
     </FirstLayout>

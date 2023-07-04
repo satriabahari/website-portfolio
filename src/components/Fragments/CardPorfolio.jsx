@@ -1,4 +1,4 @@
-import {Cards} from "../Elements/Card/Index";
+import { Cards } from "../Elements/Card/Index";
 
 const dataPortfolio = [
   {

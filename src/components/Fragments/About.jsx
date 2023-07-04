@@ -8,7 +8,7 @@ export const About = () => {
   // })
 
   return (
-    <div className="flex items-center justify-center h-auto" >
+    <div className="flex h-auto items-end justify-center md:items-center">
       <Image
         src="../../../public/images/logo-(black)-transparan.png
 "

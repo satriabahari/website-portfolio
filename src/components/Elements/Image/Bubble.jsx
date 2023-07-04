@@ -6,10 +6,10 @@ export const Bubble = ({ classname, variants, initial, animate, width }) => {
       variants={variants}
       initial={initial}
       animate={animate}
-      className={`absolute z-10 ${classname}`}
+      className={`absolute z-10 hidden md:block ${classname}`}
     >
       <img
-        src="../../../public/images/entah.png"
+        src="../../../public/images/bubble.png"
         alt="Bubble Image"
         width={width}
       />

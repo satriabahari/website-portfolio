@@ -1,10 +1,11 @@
 import { FaMoon, FaSun } from "react-icons/fa";
-import {Menus} from "../Elements/Menu/Index";
-import {Image} from "../Elements/Image/Image";
-import { useEffect, useState } from "react";
+import { Menus } from "../Elements/Menu/Index";
+import { Image } from "../Elements/Image/Image";
+import { useContext, useEffect, useState } from "react";
+import { MyContext } from "../../context/MyContext";
 
 export const Navbar = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme"));
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
@@ -28,13 +29,19 @@ export const Navbar = () => {
     localStorage.setItem("theme", theme); // Menyimpan tema ke dalam local storage
   }, [theme]);
 
-  const handleClick = () => {
+  const handleThemeClick = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
+  const context = useContext(MyContext);
+
+  const handleClick = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <nav className="w-full py-2 flex justify-between items-center border-b-[0.1px] border-primary col-span-2 fixed top-0 left-0 right-0 bg-background bg-opacity-10 backdrop-blur-md px-16 z-50">
-      <a href="/home">
+    <nav className="fixed left-0 right-0 top-0 z-50 col-span-2 flex w-full items-center justify-between border-b-[0.1px] border-primary bg-background bg-opacity-10 px-4 py-2 backdrop-blur-md lg:px-16">
+      <button onClick={() => handleClick(context.homeRef)}>
         <Image
           src={
             theme === "light"
@@ -44,13 +51,13 @@ export const Navbar = () => {
           alt="logo axel"
           width="35px"
         />
-      </a>
+      </button>
       <Menus />
       <button>
         {theme === "light" ? (
-          <FaMoon color="black" onClick={handleClick} />
+          <FaMoon size="20" color="orange" onClick={handleThemeClick} />
         ) : (
-          <FaSun color="white" onClick={handleClick} />
+          <FaSun size="20" color="orange" onClick={handleThemeClick} />
         )}
       </button>
     </nav>
