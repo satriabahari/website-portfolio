@@ -18,7 +18,7 @@ export const NameAbout = () => {
       <Title classname="text-3xl md:text-5xl mb-6 text-primary dark:text-white">
         Hello! I'm Satria Bahari
       </Title>
-      <Description classname="mb-4 text-md md:text-lg text-neutral dark:text-white">
+      <Description classname="mb-4 text-md md:text-lg text-neutral dark:text-darkneutral">
         My name is Satria Bahari, or you can call me Satria. I focus on studying
         web application development and web design. The main programming
         language I'm exploring is Javascript, as well as the React framework

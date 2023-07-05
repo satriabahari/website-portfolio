@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { MyContext } from "../../../context/MyContext"
 
 export const Bubble = ({ classname, variants, initial, animate, width }) => {
+  const context = useContext(MyContext)
   return (
     <motion.div
       variants={variants}
@@ -9,7 +12,11 @@ export const Bubble = ({ classname, variants, initial, animate, width }) => {
       className={`absolute z-10 hidden md:block ${classname}`}
     >
       <img
-        src="../../../images/bubble.png"
+        src={
+          context.theme === "light"
+          ? "/images/bubble.png"
+          : "/images/bubble-blue.png"
+          }
         alt="Bubble Image"
         width={width}
       />

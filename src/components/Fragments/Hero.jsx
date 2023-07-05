@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import { Bubble } from "../Elements/Image/Bubble";
 import { Image } from "../Elements/Image/Image";
+import { MyContext } from "../../context/MyContext";
 
 const infiniteVariant = {
   hidden: {
@@ -109,13 +111,17 @@ const animateBubble = [
 ];
 
 export const Hero = () => {
+  const context = useContext(MyContext)
+
   return (
     <div className="relative flex h-auto items-center justify-center">
       <Image
         classname="z-20 "
-        src="../../../images/axel-bubble.png
-"
-        width="sm:400"
+        src={context.theme === "light" 
+        ? "/images/axel-bubble.png" 
+        : "/images/axel-bubble-blue.png"}
+
+        width="500"
         title="logo axel"
         variants={infiniteVariant}
       />

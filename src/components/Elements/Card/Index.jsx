@@ -4,7 +4,7 @@ import { Title } from "../Text/Title";
 export const Cards = ({ title, children, icon }) => {
   return (
     <div
-      className="w-full rounded-xl border border-neutral bg-background dark:bg-primary"
+      className="w-full rounded-xl border border-primary dark:border-darksecondary bg-background backdrop-blur-lg dark:bg-darkprimary dark:bg-opacity-10"
       data-aos="flip-left"
     >
       <div className="m-6 flex flex-col justify-center dark:text-white">

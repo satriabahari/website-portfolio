@@ -10,7 +10,7 @@ export const AboutPage = () => {
   return (
     <FirstLayout
       classname={
-        "bg-background h-screen grid-rows-2 md:grid-rows-1 md:grid-cols-2 dark:bg-primary"
+        "bg-background h-screen grid-rows-2 md:grid-rows-1 md:grid-cols-2 dark:bg-darkbackground"
       }
       ref={context.aboutRef}
     >

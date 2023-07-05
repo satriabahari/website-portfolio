@@ -25,15 +25,15 @@ export const Contact = () => {
   const context = useContext(MyContext);
   return (
     <FirstLayout
-      classname="grid-cols-1 h-auto bg-background dark:bg-primary"
+      classname="grid-cols-1 h-auto bg-background dark:bg-darkbackground"
       ref={context.contactRef}
     >
       <div
-        className="my-12 flex h-auto flex-col items-center justify-center rounded-xl border border-primary dark:border-background md:my-24 md:h-52"
+        className="my-12 flex h-auto flex-col items-center justify-center rounded-xl border border-primary dark:border-darkprimary dark:bg-opacity-10 dark:bg-darkprimary backdrop-blur-lg md:my-24 md:h-52"
         data-aos="zoom-in"
         data-aos-offset="50"
       >
-        <h1 className="text-2xl font-bold dark:text-white md:text-4xl">
+        <h1 className="text-2xl font-bold dark:text-white md:text-4xl ">
           Let's Connect!
         </h1>
         <div className="flex h-auto">
@@ -41,10 +41,10 @@ export const Contact = () => {
             return (
               <div
                 key={index}
-                className="mx-3 my-4 mt-2 h-auto rounded-full border-2 border-primary p-2 dark:border-white md:my-0 md:mt-3 md:p-3"
+                className="mx-3 my-4 mt-2 h-auto rounded-full border-2 border-primary p-2 dark:border-darkprimary md:my-0 md:mt-3 md:p-3"
               >
                 <a href={social.link}>
-                  <span className="dark:text-white">{social.icon}</span>
+                  <span className="dark:text-darkprimary">{social.icon}</span>
                 </a>
               </div>
             );

@@ -27,11 +27,11 @@ export const NameHero = () => {
       initial="hidden"
       animate="visible"
     >
-      <Title classname="text-4xl md:text-6xl mb-2 text-primary dark:text-white">
-        Hello! I'm Satria,
+      <Title classname="text-3xl md:text-5xl mb-2 text-primary dark:text-white">
+        Hi! I'm <span className="dark:text-darkprimary">Satria</span> Bahari,
       </Title>
       <Type />
-      <Description classname="mb-4 text-lg text-neutral dark:text-white">
+      <Description classname="mb-4 text-lg text-neutral dark:text-darkneutral">
         A Front-End Developer with a strong interest in UI/UX Design. Like a
         solving the problem by combining that.
       </Description>

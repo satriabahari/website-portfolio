@@ -5,46 +5,44 @@ import { useContext, useEffect, useState } from "react";
 import { MyContext } from "../../context/MyContext";
 
 export const Navbar = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme"));
+  const context = useContext(MyContext);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
 
     if (storedTheme) {
-      setTheme(storedTheme);
+      context.setTheme(storedTheme);
     } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
+      context.setTheme("dark");
     } else {
-      setTheme("light");
+      context.setTheme("light");
     }
   }, []);
 
   useEffect(() => {
-    if (theme === "dark") {
+    if (context.theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
 
-    localStorage.setItem("theme", theme); // Menyimpan tema ke dalam local storage
-  }, [theme]);
+    localStorage.setItem("theme", context.theme); // Menyimpan tema ke dalam local storage
+  }, [context.theme]);
 
   const handleThemeClick = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    context.setTheme(context.theme === "dark" ? "light" : "dark");
   };
-
-  const context = useContext(MyContext);
 
   const handleClick = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 col-span-2 flex w-full items-center justify-between border-b-[0.1px] border-primary bg-background bg-opacity-10 px-4 py-2 backdrop-blur-md lg:px-16">
+    <nav className="fixed left-0 right-0 top-0 z-50 col-span-2 flex w-full items-center justify-between border-b-[0.1px] border-primary bg-background bg-opacity-10 px-4 py-2 backdrop-blur-lg dark:border-darkprimary dark:bg-transparent md:px-16">
       <button onClick={() => handleClick(context.homeRef)}>
         <Image
           src={
-            theme === "light"
+            context.theme === "light"
               ? "../../../images/logo-(black)-transparan.png"
               : "../../../images/logo-(white)-transparan.png"
           }
@@ -54,7 +52,7 @@ export const Navbar = () => {
       </button>
       <Menus />
       <button>
-        {theme === "light" ? (
+        {context.theme === "light" ? (
           <FaMoon size="20" color="orange" onClick={handleThemeClick} />
         ) : (
           <FaSun size="20" color="orange" onClick={handleThemeClick} />
