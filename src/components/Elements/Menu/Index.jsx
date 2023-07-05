@@ -11,9 +11,9 @@ export const Menus = () => {
 
   return (
     <ul className="flex rounded-full border border-primary px-3 py-1 dark:border-darkprimary">
-      {/* <Menu onClick={() => handleClick(context.homeRef)}>Home</Menu> */}
       <Menu onClick={() => handleClick(context.aboutRef)}>About</Menu>
       <Menu onClick={() => handleClick(context.skillRef)}>Skills</Menu>
+      <Menu onClick={() => handleClick(context.certificationRef)}>Certification</Menu>
       <Menu onClick={() => handleClick(context.contactRef)}>Contact</Menu>
       {/* <Menu onClick={() => handleClick(context.portfolioRef)}>Portfolio</Menu> */}
     </ul>

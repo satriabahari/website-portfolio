@@ -6,6 +6,7 @@ import { SkillsPage } from "./Skills";
 import { Portfolio } from "./Portfolio";
 import { Footer } from "./Footer";
 import { Contact } from "./Contact";
+import { Certification } from "./Certification";
 
 export const IndexPages = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme"))
@@ -14,6 +15,7 @@ export const IndexPages = () => {
     homeRef: useRef(null),
     aboutRef: useRef(null),
     skillRef: useRef(null),
+    certificationRef: useRef(null),
     portfolioRef: useRef(null),
     contactRef: useRef(null),
     theme,
@@ -25,6 +27,7 @@ export const IndexPages = () => {
       <HerosPage />
       <AboutPage />
       <SkillsPage />
+      <Certification/>
       {/* <Portfolio /> */}
       <Contact />
       <Footer />
