@@ -58,7 +58,13 @@ export const CardSkills = () => {
   return (
     <>
       {dataSkills.map((data, index) => (
-        <Cards key={index} icon={data.icon} title={data.title} alt={data.title}>
+        <Cards
+          key={index}
+          icon={data.icon}
+          title={data.title}
+          alt={data.title}
+          classname="w-full "
+        >
           {data.description}
         </Cards>
       ))}

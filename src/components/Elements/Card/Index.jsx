@@ -1,10 +1,10 @@
 import { Description } from "../Text/Description";
 import { Title } from "../Text/Title";
 
-export const Cards = ({ title, children, icon, src }) => {
+export const Cards = ({ title, children, icon, src, classname }) => {
   return (
     <div
-      className="w-full overflow-hidden rounded-xl border border-primary bg-background backdrop-blur-lg dark:border-darkprimary dark:bg-darkprimary dark:bg-opacity-10"
+      className={`overflow-hidden rounded-xl border border-primary bg-background backdrop-blur-lg dark:border-darkprimary dark:bg-darkprimary dark:bg-opacity-10 ${classname}`}
       data-aos="flip-left"
     >
       <div className=" flex flex-col justify-center dark:text-white">

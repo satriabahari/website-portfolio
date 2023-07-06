@@ -36,6 +36,7 @@ export const CardPortfolio = () => {
           src={data.image}
           title={data.title}
           alt={data.title}
+          classname="w-full "
         >
           {data.description}
         </Cards>

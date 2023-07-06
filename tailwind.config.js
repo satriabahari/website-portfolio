@@ -14,7 +14,7 @@ export default {
         background: "#F9FAFB",
         darkprimary: "#0A79E2",
         darksecondary: "#0902DB",
-        darkneutral: "#888",
+        darkneutral: "#999",
         darkbackground: "#090D2B",
       },
     },

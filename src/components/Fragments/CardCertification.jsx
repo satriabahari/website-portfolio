@@ -20,7 +20,7 @@ export const CardCertification = () => {
   return (
     <>
       {dataCertification.map((data, index) => (
-        <Cards key={index} src={data.image} title={data.title} alt={data.title}>
+        <Cards key={index} src={data.image} title={data.title} alt={data.title} classname="xl:w-3/4 flex justify-center items-center m-auto">
           <span className="text-neutral dark:text-darkneutral">By </span>
           {data.description}
           {/* <Button>View Credential</Button> */}
