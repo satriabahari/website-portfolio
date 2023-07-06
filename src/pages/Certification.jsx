@@ -27,7 +27,7 @@ export const Certification = () => {
           are the same live as local.
         </Description>
       </div>
-      <div className="grid w-full grid-cols-2 gap-6 lg:grid-cols-3">
+      <div className="grid w-full grid-cols-1 sm:grid-cols-2 gap-6 ">
         <CardCertification />
       </div>
     </FirstLayout>

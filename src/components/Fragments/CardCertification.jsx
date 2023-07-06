@@ -14,11 +14,6 @@ const dataCertification = [
     title: "TailwindCSS Online Codepolitan",
     description: "Codepolitan",
   },
-  {
-    image: "images/tailwindcss-codepolitan.jpg",
-    title: "TailwindCSS Online Codepolitan",
-    description: "Codepolitan",
-  },
 ];
 
 export const CardCertification = () => {

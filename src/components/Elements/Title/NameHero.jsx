@@ -27,7 +27,7 @@ export const NameHero = () => {
       initial="hidden"
       animate="visible"
     >
-      <Title classname="text-3xl md:text-5xl mb-2 text-primary dark:text-white">
+      <Title classname="text-4xl md:text-5xl mb-2 text-primary dark:text-white">
         Hi! I'm <span className="dark:text-darkprimary">Satria</span> Bahari,
       </Title>
       <Type />

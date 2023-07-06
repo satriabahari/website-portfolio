@@ -1,8 +1,10 @@
 import { FaMoon, FaSun } from "react-icons/fa";
 import { Menus } from "../Elements/Menu/Index";
 import { Image } from "../Elements/Image/Image";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { MyContext } from "../../context/MyContext";
+import { Hamburger } from "../Elements/Menu/Hamburger";
+import { Pop } from "../Elements/Menu/Pop";
 
 export const Navbar = () => {
   const context = useContext(MyContext);
@@ -38,26 +40,34 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 col-span-2 flex w-full items-center justify-between border-b-[0.1px] border-primary bg-background bg-opacity-10 px-4 py-2 backdrop-blur-lg dark:border-darkprimary dark:bg-transparent md:px-16">
-      <button onClick={() => handleClick(context.homeRef)}>
-        <Image
-          src={
-            context.theme === "light"
-              ? "../../../images/logo-(black)-transparan.png"
-              : "../../../images/logo-(white)-transparan.png"
-          }
-          alt="logo axel"
-          width="35px"
+    <>
+      <nav className="fixed left-0 right-0 top-0 z-50 col-span-2 flex w-full items-center justify-between border-b-[0.1px] border-primary bg-background bg-opacity-5 px-4 py-2 backdrop-blur-lg dark:border-darkprimary dark:bg-transparent md:px-16">
+        <button onClick={() => handleClick(context.homeRef)}>
+          <Image
+            src={
+              context.theme === "light"
+                ? "../../../images/logo-(black)-transparan.png"
+                : "../../../images/logo-(white)-transparan.png"
+            }
+            alt="logo axel"
+            width="35px"
+          />
+        </button>
+        <Menus
+          hidden="sm:block hidden"
+          classname="flex rounded-full border border-primary px-3 py-1 dark:border-darkprimary"
         />
-      </button>
-      <Menus />
-      <button>
-        {context.theme === "light" ? (
-          <FaMoon size="20" color="orange" onClick={handleThemeClick} />
-        ) : (
-          <FaSun size="20" color="orange" onClick={handleThemeClick} />
-        )}
-      </button>
-    </nav>
+        <div className="flex items-center justify-center">
+          <button className="mr-6 sm:mr-0">
+            {context.theme === "light" ? (
+              <FaMoon size="20" color="orange" onClick={handleThemeClick} />
+            ) : (
+              <FaSun size="20" color="orange" onClick={handleThemeClick} />
+            )}
+          </button>
+          <Hamburger />
+        </div>
+      </nav>
+    </>
   );
 };
