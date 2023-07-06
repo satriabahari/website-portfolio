@@ -6,8 +6,6 @@ export const Type = () => {
       A{" "}
       <TypeAnimation
         sequence={[
-          "Student UNJA.",
-          1000,
           "Front End Developer.",
           1000,
           "UI/UX Designer.",
