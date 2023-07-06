@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Pop = ({ initial, animate }) => {
   return (
     <motion.div
-      className="fixed right-0 top-[47px] z-50 block h-auto w-36 border-b border-l border-primary bg-background py-2 md:hidden"
+      className="fixed right-0 top-[47px] z-50 block h-auto w-36 border-b border-l border-primary bg-background py-2 md:hidden dark:border-darkprimary dark:bg-darkbackground"
       initial={initial}
       animate={animate}
     >
