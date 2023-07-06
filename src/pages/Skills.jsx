@@ -23,12 +23,15 @@ export const SkillsPage = () => {
         data-aos="fade-down"
         data-aos-offset="100"
       >
-        <Title classname=" text-4xl md:text-5xl text-primary dark:text-white">Skills</Title>
+        <Title classname=" text-4xl md:text-5xl text-primary dark:text-white">
+          Skills
+        </Title>
         <span className="my-6 h-[0.5px] w-1/2 bg-neutral dark:bg-white md:w-1/5"></span>
         <Description classname="w-full md:w-2/3 text-lg text-neutral dark:text-darkneutral">
-          Begin with your repository, or start with a template. Our tooling
-          extends your app with plugins and variable management so environments
-          are the same live as local.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, sint
+          illo, asperiores cupiditate distinctio nostrum fugit sunt
+          exercitationem aliquam quaerat earum eveniet consectetur praesentium!
+          Aliquam?
         </Description>
       </div>
       <div className=" grid w-full grid-cols-2 gap-2 lg:grid-cols-4">

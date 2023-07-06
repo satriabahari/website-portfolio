@@ -11,7 +11,7 @@ export const Cards = ({ title, children, icon, src, classname }) => {
         <img src={src}/>
         <div className="m-6">
           {icon}
-          <Title classname="text-primary font-bold text-lg mt-3 mb-1 dark:text-white h-14">
+          <Title classname="text-primary font-bold text-lg mt-3 mb-1 dark:text-white">
             {title}
           </Title>
           <Description classname="text-base dark:text-white">

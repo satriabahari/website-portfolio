@@ -17,9 +17,9 @@ export const Portfolio = () => {
         <Title classname=" text-4xl text-primary">My Portfolio</Title>
         <span className="my-6 h-[0.5px] w-1/5 bg-neutral"></span>
         <Description classname="w-2/3 text-lg text-neutral">
-          Begin with your repository, or start with a template. Our tooling
-          extends your app with plugins and variable management so environments
-          are the same live as local.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit id, quo
+          temporibus nemo, numquam corporis, amet deleniti molestiae ea
+          praesentium quidem molestias sapiente aspernatur laboriosam?
         </Description>
       </div>
       <div className=" mb-12 grid w-full grid-cols-2 gap-4">
